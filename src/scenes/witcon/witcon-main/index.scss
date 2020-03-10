@@ -1,0 +1,292 @@
+@import "../../../styles/_variables";
+
+.Witcon {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  //TODO: pop these into their own stylesheet doc to make consistent across all pages
+  h1 {
+    font-size: $font-size-35;
+
+    @include phone-only {
+      margin-top: 70px;
+    }
+  }
+
+  p {
+    line-height: 26px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  &__banner {
+    padding-top: 80px;
+
+    @include phone-only {
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  &__landing {
+    height: auto;
+
+    &-main {
+      background-color: $color-yellow;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 90vh;
+      padding: 20px;
+
+      @include tablet {
+        margin-top: -50px;
+        padding-top: 100px;
+      }
+
+      &-paragraph {
+        max-width: 600px;
+      }
+
+      a {
+        border-bottom: 1px solid $color-grey;
+        padding-bottom: 2px;
+      }
+    }
+  }
+
+  &__tickets {
+    background-color: $color-white;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+    &-paragraph {
+      max-width: 600px;
+
+      .Link-lighterBlock {
+        width: 100px;
+        font-size: $font-size-16;
+        padding: 15px 20px;
+      }
+
+      .Link {
+        text-align: center;
+      }
+    }
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  &__programme {
+    background-color: $color-blue-lighter;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 50px;
+
+    &-paragraph {
+      max-width: 600px;
+      justify-content: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    td, th {
+      padding: 10px;
+      border: 1px dashed $color-grey-darker;
+      text-align: left;
+      font-size: $font-size-16;
+      line-height: 26px;
+      color: $color-grey-darker;
+    }
+  }
+
+  &__speakers {
+    padding: 50px 0;
+    background-color: $color-grey-lighter;
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include phone-only {
+        padding: 20px;
+      }
+
+      &-paragraph {
+        max-width: 600px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &-submit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 600px;
+      margin-top: 30px;
+
+      @include phone-only {
+        padding: 20px;
+      }
+
+      h3 {
+        font-size: $font-size-30;
+      }
+
+      p {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  &__sponsors {
+    padding-top: 50px;
+    background-color: $color-white;
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: justify;
+    text-align: center;
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include phone-only {
+        padding: 0 20px;
+      }
+
+      &-paragraph {
+        max-width: 800px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__witconpast {
+    background-color: $color-grey-darker;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 50px;
+    text-align: center;
+
+    h3 {
+      color: $color-white;
+      line-height: 30px;
+    }
+  }
+}
+
+//TODO: put into a separate component file
+
+.title-block {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-grey;
+  color: $color-white;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5px;
+  padding: 20px;
+
+  h5 {
+    text-align: center;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  &-accent {
+    background-color: $color-green;
+    color: $color-grey-darker;
+  }
+}
+
+.title-block-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-tile-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  p {
+    font-size: $font-size-16;
+  }
+
+  .sponsor-tile {
+    max-width: 300px;
+    margin: 20px;
+    display: flex;
+    background-color: $color-white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    .medal-img {
+      height: 200px;
+      margin: 20px;
+    }
+
+    .medal-description {
+      max-width: 250px;
+
+      &-point {
+        padding: 10px;
+        font-size: $font-size-14;
+      }
+    }
+  }
+
+  .disabled {
+    box-shadow: none;
+    background-color: $color-grey-lighter;
+  }
+}

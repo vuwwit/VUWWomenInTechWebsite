@@ -1,0 +1,24 @@
+@import "../../../styles/_variables";
+
+.Link {
+  padding: 10px;
+
+  &-darkerBlock {
+    background-color: $color-teal;
+    border-radius: 5px;
+    font-size: $font-size-12;
+    padding: 10px 20px;
+    border: none;
+    color: $color-white;
+    font-weight: 500;
+    width: 70px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  &-darkerBlock:hover {
+    background-color: $color-teal-dark;
+    border-radius: 5px;
+    border: none;
+  }
+}

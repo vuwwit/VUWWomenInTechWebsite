@@ -1,0 +1,98 @@
+@import "../../styles/_variables";
+
+.VuwwitShop {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  //TODO: pop these into their own stylesheet doc to make consistent across all pages
+  &__main {
+    height: auto;
+
+    &-gallery {
+      background-color: $color-white;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+
+      @include tablet {
+        margin-top: -50px;
+      }
+
+      &-heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: $font-size-35;
+        padding-bottom: 30px;
+        @include tablet {
+          margin-top: 200px;
+        }
+        @include phone-only {
+          margin-top: 100px;
+        }
+      }
+
+      &-group {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include tablet {
+          display: flex;
+          flex-direction: row;
+        }
+
+        &-tile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .img {
+            height: 250px;
+            width: 250px;
+            box-shadow: 0 0 3px 3px $color-grey;
+            margin: 10px;
+
+            @include tablet {
+              height: 320px;
+              width: 320px;
+            }
+
+            &-soon {
+              opacity: 0.4;
+              height: 250px;
+              width: 250px;
+              box-shadow: 0 0 3px 3px $color-grey;
+              margin: 10px;
+
+              @include tablet {
+                height: 320px;
+                width: 320px;
+              }
+            }
+          }
+
+          .Link-outline {
+            color: $color-grey-darker;
+            border: 2px solid $color-grey-darker;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

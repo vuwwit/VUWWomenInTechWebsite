@@ -1,0 +1,56 @@
+@import "../../styles/_variables";
+
+.Home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $color-white;
+  background: $color-teal;
+
+  &__content {
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 20px 0 20px;
+
+    &-subheadings {
+      padding: 10px;
+      align-items: center;
+      margin: 0 auto 0 auto;
+      max-width: 800px;
+
+      p {
+        font-size: $font-size-16;
+        line-height: 25px;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
+
+    &-upcoming {
+      margin: 40px 40px 0px 40px;
+      background-color: $color-white;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 30px 200px;
+
+      h1, h2, h3, p {
+        color: $color-grey-darker;
+        line-height: 25px;
+        text-align: justify;
+        text-justify: inter-word;
+        max-width: 800px;
+      }
+
+      .role {
+        line-height: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+@import "../../../styles/_variables";
+
+.About {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  //TODO: pop these into their own stylesheet doc to make consistent across all pages
+  h1 {
+    font-size: $font-size-35;
+  }
+
+  p {
+    font-size: $font-size-16;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  &__main {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    flex-direction: column;
+
+    &-landing {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        margin-top: 150px;
+        color: $color-black;
+        text-align: center;
+      }
+
+      .landinggroup {
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 100px;
+        padding-top: 30px;
+
+        &-img {
+          width: 300px;
+          height: 200px;
+          background-color: $color-teal;
+          margin: 5px;
+        }
+      }
+    }
+
+    &-whoweare {
+      color: $color-grey-darker;
+      padding: 80px 0;
+      background-color: $color-yellow;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-whatwedo {
+      color: $color-grey-darker;
+      padding: 80px 0;
+      background-color: $color-white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      &--content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &-img {
+          width: 150px;
+          height: 150px;
+          background-color: $color-green;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin: 20px;
+          border-radius: 100px;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    &-aim {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 0;
+      background-color: $color-blue-dark;
+      width: 100%;
+
+      h3 {
+        max-width: 800px;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 400;
+      }
+    }
+
+    &-networking,
+    &-social {
+      padding: 80px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .eventgroup {
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &-img {
+          height: 200px;
+          width: 300px;
+          background-color: $color-teal;
+          margin: 5px;
+
+          @include tablet {
+            height: 267px;
+            width: 400px;
+          }
+        }
+      }
+    }
+
+    &-social {
+      background-color: $color-grey-lighter;
+    }
+
+    &-workshops,
+    &-outreach {
+      padding: 80px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-white;
+
+      .eventgroup {
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-img {
+          height: 200px;
+          width: 280px; // should be 300px but pics have diff dimensions
+          background-color: $color-teal;
+          margin: 5px;
+
+          @include tablet {
+            height: 267px;
+            width: 370px; // should be 400px but pics have diff dimensions
+          }
+        }
+      }
+    }
+
+    &-outreach {
+      background-color: $color-grey-lighter;
+    }
+  }
+
+  &__committee {
+    background-color: $color-grey-darker;
+    width: 100%;
+    padding: 50px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      color: $color-white;
+      line-height: 30px;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: row;
+
+      @include phone-only {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        line-height: 40px;
+      }
+    }
+
+    @include phone-only {
+      padding: 30px 0;
+    }
+  }
+}

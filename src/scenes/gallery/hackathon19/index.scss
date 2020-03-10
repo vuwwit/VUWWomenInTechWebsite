@@ -1,0 +1,11 @@
+.Gallery {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .main {
+    top: 90px;
+    position: absolute;
+  }
+}

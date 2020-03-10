@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost:3000/about-committee -->
+<html lang="en" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+</style><style type="text/css">.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+  height: 40vmin; }
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; }
+
+.App-link {
+  color: #61dafb; }
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+</style><style type="text/css">a {
+  text-decoration: none; }
+
+.Home {
+  background-color: #cde7e8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .Home__content {
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    align-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px; }
+    .Home__content-heading {
+      padding-top: 70px; }
+      .Home__content-heading h1 {
+        font-size: 35px; }
+    .Home__content-subheadings {
+      max-width: 600px;
+      padding: 10px;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto 0 auto; }
+      .Home__content-subheadings h5 {
+        font-size: 16px;
+        font-weight: 400; }
+</style><style type="text/css">a {
+  text-decoration: none; }
+
+.Button-outline {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 15px;
+  border-radius: 30px;
+  margin-bottom: 50px; }
+
+.Button-outline:hover {
+  background-color: #fff;
+  color: #12A5B7;
+  font-weight: 500; }
+
+.Button-outline:visited {
+  color: #fff; }
+</style><style type="text/css">a {
+  text-decoration: none; }
+
+.Witcon {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .Witcon h1 {
+    font-size: 35px; }
+  .Witcon h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left; }
+  .Witcon__landing {
+    height: auto; }
+    .Witcon__landing-main {
+      background-color: #ffd400;
+      margin-top: 150px;
+      flex-grow: 1;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 20px; }
+      @media only screen and (min-width: 600px) {
+        .Witcon__landing-main {
+          margin-top: -50px; } }
+      .Witcon__landing-main-paragraph {
+        max-width: 600px;
+        padding: 10px;
+        align-items: center;
+        margin-bottom: 20px; }
+  .Witcon__speakers {
+    padding: 20px;
+    margin: 100px 0;
+    background-color: #fff;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    padding-top: 25px;
+    flex-direction: column; }
+    .Witcon__speakers-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      .Witcon__speakers-top-heading {
+        justify-content: center; }
+      .Witcon__speakers-top-paragraph {
+        max-width: 600px;
+        padding: 30px;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 20px; }
+        .Witcon__speakers-top-paragraph h5 {
+          font-size: 16px;
+          font-weight: 400; }
+  .Witcon__sponsors {
+    padding: 20px;
+    margin: 100px 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    padding-top: 25px;
+    flex-direction: column; }
+    .Witcon__sponsors-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 100px; }
+      .Witcon__sponsors-top-heading {
+        justify-content: center; }
+      .Witcon__sponsors-top-paragraph {
+        max-width: 600px;
+        padding: 30px;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 20px; }
+        .Witcon__sponsors-top-paragraph h5 {
+          font-size: 16px;
+          font-weight: 400; }
+  .Witcon__witcon18 {
+    background-color: #555;
+    width: 100%;
+    padding: 50px;
+    margin-top: 50px; }
+    .Witcon__witcon18 h3 {
+      color: #fff;
+      line-height: 30px; }
+
+.title-block {
+  max-width: 300px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00a6fb;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+  padding: 20px; }
+  @media only screen and (min-width: 600px) {
+    .title-block {
+      margin: 30px; } }
+
+.title-block-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1500px;
+  align-items: center;
+  justify-content: center; }
+
+.sponsor-tile-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  @media only screen and (min-width: 600px) {
+    .sponsor-tile-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; } }
+  .sponsor-tile-group .sponsor-tile {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .sponsor-tile-group .sponsor-tile .medal-img {
+      height: 200px;
+      margin: 20px; }
+    .sponsor-tile-group .sponsor-tile .medal-description {
+      text-align: left;
+      margin-top: 30px;
+      font-size: 12px; }
+      .sponsor-tile-group .sponsor-tile .medal-description-point {
+        padding: 10px; }
+</style><style type="text/css">a {
+  text-decoration: none; }
+
+.Header {
+  background-color: #fff;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  color: #555;
+  display: flex;
+  justify-content: space-between; }
+  .Header__left {
+    display: flex; }
+    .Header__left-logo {
+      margin-left: 30px;
+      width: 80px;
+      height: 80px;
+      padding: 10px; }
+      @media only screen and (max-width: 599px) {
+        .Header__left-logo {
+          justify-content: center; } }
+  .Header__right {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    @media only screen and (max-width: 599px) {
+      .Header__right {
+        flex-wrap: wrap; } }
+    @media only screen and (max-width: 599px) {
+      .Header__right-button {
+        flex-wrap: wrap; } }
+  @media only screen and (max-width: 599px) {
+    .Header {
+      flex-wrap: wrap; } }
+
+.Button {
+  padding: 10px; }
+  .Button-darkerBlock {
+    background-color: #12A5B7;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    width: 125px; }
+  .Button-darkerBlock:hover {
+    background-color: #049693;
+    border-radius: 5px;
+    border: none; }
+  .Button-lighterBlock {
+    width: 125px;
+    background-color: #00a6fb;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-weight: 500; }
+  .Button-lighterBlock:hover {
+    background-color: #0678b1;
+    border-radius: 5px;
+    color: #fff;
+    border: none; }
+</style><style type="text/css">a {
+  text-decoration: none; }
+
+.Footer {
+  height: 100px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  margin-top: 50px; }
+  .Footer-link {
+    font-size: 12px; }
+    @media only screen and (max-width: 599px) {
+      .Footer-link {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+        text-align: center; } }
+    .Footer-link a {
+      margin: 20px 0px;
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      text-decoration: none;
+      color: #12A5B7; }
+    .Footer-link-email {
+      font-size: 12px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 5px;
+      text-decoration: none;
+      color: #12A5B7; }
+  .Footer a:hover {
+    color: #2d7288;
+    font-weight: 400;
+    border-bottom: 2px solid #2d7288; }
+  .Footer-email:hover {
+    color: #2d7288;
+    font-weight: 400;
+    border-bottom: 2px solid #2d7288; }
+  .Footer a:visited {
+    color: #12A5B7; }
+  @media only screen and (max-width: 599px) {
+    .Footer {
+      flex-wrap: wrap; } }
+</style><style type="text/css">a {
+  text-decoration: none; }
+
+.Witcon18 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .Witcon18 h1 {
+    font-size: 35px; }
+  .Witcon18 h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left; }
+  .Witcon18 h6 {
+    line-height: 20px;
+    font-weight: 400;
+    margin: 10px; }
+  .Witcon18__landing {
+    height: auto; }
+    .Witcon18__landing-main {
+      margin-top: 150px;
+      flex-grow: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 20px; }
+      @media only screen and (min-width: 600px) {
+        .Witcon18__landing-main {
+          margin-top: -50px;
+          min-height: 100vh; } }
+      .Witcon18__landing-main-img {
+        opacity: 0.8;
+        width: 100%; }
+      .Witcon18__landing-main-heading {
+        margin-top: 50px; }
+  .Witcon18__sponsors {
+    padding: 20px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    flex-direction: column; }
+    .Witcon18__sponsors-heading {
+      justify-content: center; }
+    .Witcon18__sponsors-paragraph {
+      padding: 30px;
+      align-items: center;
+      text-align: left;
+      margin-bottom: 20px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column; }
+      .Witcon18__sponsors-paragraph h5 {
+        font-size: 16px;
+        font-weight: 400; }
+      .Witcon18__sponsors-paragraph h4 {
+        line-height: 30px; }
+      .Witcon18__sponsors-paragraph-gold {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .Witcon18__sponsors-paragraph-gold-sponsor {
+          width: 200px;
+          margin: 20px;
+          display: flex;
+          align-items: center; }
+      .Witcon18__sponsors-paragraph-silver {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .Witcon18__sponsors-paragraph-silver-sponsor {
+          width: 110px;
+          margin: 20px; }
+  .Witcon18__images {
+    background-color: #555;
+    width: 100%;
+    padding: 50px; }
+    .Witcon18__images h3 {
+      color: #fff;
+      line-height: 30px; }
+  .Witcon18__eventhost {
+    background-color: #ffd400;
+    opacity: 0.8;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Witcon18__eventhost-tile {
+      display: flex;
+      flex-direction: column;
+      margin: 50px; }
+      @media only screen and (min-width: 600px) {
+        .Witcon18__eventhost-tile {
+          display: flex;
+          flex-direction: row; } }
+      .Witcon18__eventhost-tile-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .Witcon18__eventhost-tile-left .img {
+          height: 150px;
+          width: 150px;
+          background-color: #12A5B7;
+          border-radius: 100px;
+          margin: 50px; }
+      .Witcon18__eventhost-tile-right {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left; }
+  .Witcon18__panel {
+    margin-top: 100px;
+    background-color: #cde7e8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0; }
+    .Witcon18__panel-group {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center; }
+      @media only screen and (min-width: 600px) {
+        .Witcon18__panel-group {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          max-width: 1000px; } }
+      .Witcon18__panel-group-tile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px; }
+        .Witcon18__panel-group-tile-img {
+          height: 150px;
+          width: 150px;
+          background-color: #12A5B7;
+          border-radius: 100px;
+          margin: 10px; }
+        .Witcon18__panel-group-tile-descrip {
+          width: 200px; }
+  .Witcon18__speakers {
+    margin-top: 100px; }
+    .Witcon18__speakers-group {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center; }
+      @media only screen and (min-width: 600px) {
+        .Witcon18__speakers-group {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap; } }
+      .Witcon18__speakers-group-tile {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0; }
+        @media only screen and (min-width: 600px) {
+          .Witcon18__speakers-group-tile {
+            display: flex;
+            flex-direction: row;
+            margin: 50px 0; } }
+        .Witcon18__speakers-group-tile-left {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .Witcon18__speakers-group-tile-left .img {
+            height: 150px;
+            width: 150px;
+            background-color: #12A5B7;
+            border-radius: 100px; }
+          .Witcon18__speakers-group-tile-left h6 {
+            width: 200px; }
+        .Witcon18__speakers-group-tile-right {
+          margin-top: -50px;
+          max-width: 450px;
+          display: flex;
+          flex-direction: column;
+          background-color: #f2f2f2;
+          margin: 30px;
+          padding: 30px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+          .Witcon18__speakers-group-tile-right h3 {
+            line-height: 25px;
+            font-weight: 500; }
+</style><style type="text/css">a {
+  text-decoration: none; }
+
+.VuwwitShop {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .VuwwitShop h1 {
+    font-size: 35px; }
+  .VuwwitShop h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left; }
+  .VuwwitShop__main {
+    height: auto; }
+    .VuwwitShop__main-gallery {
+      background-color: #fff;
+      margin-top: 150px;
+      flex-grow: 1;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 20px; }
+      @media only screen and (min-width: 600px) {
+        .VuwwitShop__main-gallery {
+          margin-top: -50px; } }
+      .VuwwitShop__main-gallery-heading {
+        width: 100%;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #12A5B7; }
+      @media only screen and (min-width: 600px) {
+        .VuwwitShop__main-gallery h1 {
+          margin-top: 200px; } }
+      .VuwwitShop__main-gallery-group {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        flex-wrap: wrap; }
+        @media only screen and (min-width: 600px) {
+          .VuwwitShop__main-gallery-group {
+            display: flex;
+            flex-direction: row; } }
+        .VuwwitShop__main-gallery-group-tile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 30px; }
+          .VuwwitShop__main-gallery-group-tile .img {
+            height: 250px;
+            width: 250px;
+            background-color: #12A5B7;
+            margin: 50px 0; }
+            @media only screen and (min-width: 600px) {
+              .VuwwitShop__main-gallery-group-tile .img {
+                height: 320px;
+                width: 320px; } }
+            .VuwwitShop__main-gallery-group-tile .img-soon {
+              opacity: 0.4;
+              height: 250px;
+              width: 250px;
+              background-color: #12A5B7;
+              margin: 50px 0; }
+              @media only screen and (min-width: 600px) {
+                .VuwwitShop__main-gallery-group-tile .img-soon {
+                  height: 320px;
+                  width: 320px; } }
+          .VuwwitShop__main-gallery-group-tile h5 {
+            max-width: 400px;
+            margin: 10px; }
+</style><style type="text/css">a {
+  text-decoration: none; }
+
+.Committee {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .Committee h1 {
+    font-size: 35px; }
+  .Committee h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left; }
+  .Committee__main {
+    height: auto; }
+    .Committee__main-gallery {
+      background-color: #fff;
+      margin-top: 150px;
+      flex-grow: 1;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 20px; }
+      @media only screen and (min-width: 600px) {
+        .Committee__main-gallery {
+          margin-top: -50px; } }
+      .Committee__main-gallery-heading {
+        width: 100%;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      @media only screen and (min-width: 600px) {
+        .Committee__main-gallery h1 {
+          margin-top: 200px; } }
+      .Committee__main-gallery-group {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        flex-wrap: wrap;
+        justify-content: center; }
+        @media only screen and (min-width: 600px) {
+          .Committee__main-gallery-group {
+            display: flex;
+            flex-direction: row; } }
+        .Committee__main-gallery-group-tile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 30px; }
+          .Committee__main-gallery-group-tile .img {
+            height: 170px;
+            width: 170px;
+            background-color: #12A5B7;
+            margin: 50px 0;
+            border-radius: 200px; }
+            @media only screen and (min-width: 600px) {
+              .Committee__main-gallery-group-tile .img {
+                height: 320px;
+                width: 320px; } }
+        .Committee__main-gallery-group h5 {
+          max-width: 400px;
+          margin: 10px; }
+</style><script charset="utf-8" src="./about-committee_files/main.1a351551815e260e25f3.hot-update.js"></script><script charset="utf-8" src="./about-committee_files/main.363987d4c681a28ff3d7.hot-update.js"></script><script charset="utf-8" src="./about-committee_files/main.f12b858c4154962d6d08.hot-update.js"></script><script charset="utf-8" src="./about-committee_files/main.654800afff9797c41dc9.hot-update.js"></script><script charset="utf-8" src="./about-committee_files/main.ea0f31c12bcef0fb1b0b.hot-update.js"></script><script charset="utf-8" src="./about-committee_files/main.dc9aab610d0f6e1f9960.hot-update.js"></script></head>
+<body data-gr-c-s-loaded="true">
+<!-- <img src="06_BW_Desktop_Icon.png"> -->
+<div id="root"><div class="App"><div class="Header"><div class="Header__left"><a href="http://localhost:3000/"><img src="./about-committee_files/transparentlogo.fc5f024a.png" alt="VUWWIT-logo" class="Header__left-logo"></a><a href="http://localhost:3000/witcon">Witcon</a><a href="http://localhost:3000/witcon-2018">Witcon2018</a><a href="http://localhost:3000/upcoming-events">Upcoming Events</a><a href="http://localhost:3000/vuwwit-shop">VUWWIT Shop</a><a href="http://localhost:3000/committee">Committee</a></div><div class="Header__right"><div class="Button"><a href="https://goo.gl/forms/jugsseLBrjUPdzsw1" class="Button-lighterBlock">Join Here</a></div><div class="Button"><a class="Button-darkerBlock">Sponsor Us</a></div></div></div><main><main class="Committee"><div class="Committee__main"><div class="Committee__main-gallery"><div class="Committee__main-gallery-heading"><h1>Meet the 2019 Committee</h1></div><div class="Committee__main-gallery-group"><div class="Committee__main-gallery-group-tile"><div class="img"></div><h3></h3><h5></h5><h5></h5></div><div class="Committee__main-gallery-group-tile"><div class="img"></div><h3></h3><h5></h5></div><div class="Committee__main-gallery-group-tile"><div class="img"></div><h3></h3><h5></h5></div><div class="Committee__main-gallery-group-tile"><div class="img"> &gt;</div><h3></h3><h5></h5></div><div class="Committee__main-gallery-group-tile"><div class="img"></div><h3></h3><h5></h5></div></div></div></div></main></main><div class="Footer"><div class="Footer-link"><a href="mailto:vuwwit@gmail.com" class="Footer-link-email">vuwwit@gmail.com</a></div><div class="Footer-link"><a href="http://instagram.com/vuwwit" class="Footer-links">Instagram</a></div><div class="Footer-link"><a href="http://www.facebook.com/vuwwit" class="Footer-links">Facebook</a></div><div class="Footer-link"><a href="https://www.linkedin.com/company/vuwwit/" class="Footer-links">Linked In</a></div><div class="Footer-link"><a href="http://www.facebook.com/groups/vuwwit" class="Footer-links">Members Forum</a></div></div></div><script src="./about-committee_files/main.4c7276286002fab7b14d.hot-update.js"></script>
+</div></body></html>

@@ -1,0 +1,102 @@
+@import "../../styles/_variables";
+
+.Sponsor {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  //TODO: pop these into their own stylesheet doc to make consistent across all pages
+  h1 {
+    padding: 100px 0 0 0;
+    font-size: $font-size-35;
+    color: $color-grey-darker;
+  }
+
+  h2 {
+    font-size: $font-size-25;
+    color: $color-grey-darker;
+    text-align: center;
+  }
+
+  p {
+    font-size: $font-size-16;
+    font-weight: 400;
+    line-height: 26px;
+    color: $color-grey-darker;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 600px;
+  }
+
+  &__main {
+    height: auto;
+    display: flex;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    flex-direction: column;
+
+    @include phone-only {
+      padding: 30px;
+    }
+
+    &-witcon {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0 200px 30px 200px;
+      background-color: $color-grey-lighter;
+
+      .Link-outline {
+        color: $color-grey-darker;
+        border: 2px solid $color-grey-darker;
+        background-color: $color-white;
+      }
+    
+      .Link-outline:hover {
+        color: $color-white;
+        background-color: $color-grey-darker;
+      }
+    }
+
+    &-otherevents {
+
+      &-events {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          border: 1px dotted $color-grey;
+          padding: 10px;
+          margin: 2px;
+          border-radius: 5px;
+        }
+
+        .sponsored {
+          border: 1px dotted $color-grey-lighter;
+        }
+      }
+    }
+
+    &-sponsorbutton {
+      margin: 30px 0 50px 0;
+
+      a {
+        font-weight: bold;
+        padding: 15px 30px;
+        color: $color-grey-darker;
+        border-radius: 5px;
+        font-size: $font-size-18;
+        background-color: $color-yellow;
+      }
+
+      a:hover {
+        background-color: $color-yellow-dark;
+      }
+
+    }
+  }
+}

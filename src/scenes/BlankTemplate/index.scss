@@ -1,0 +1,284 @@
+//colours
+$color-black: #222;
+$color-grey-darkest: #333;
+$color-grey-darker: #555;
+$color-grey:#4c5b5c;
+$color-grey-lighter: #f2f2f2;
+$color-off-white: #fcfcfc;
+$color-white: #fff;
+
+$color-green: #68edc6;
+
+$color-blue-dark: #0678b1;
+$color-blue: #00a6fb;
+$color-blue-lighter:#cde7e8;
+
+$color-teal-darkest: #05668d;
+$color-teal-darker:#2d7288;
+$color-teal: #12A5B7;
+$color-teal-dark: #049693;
+
+//font sizes
+$font-size-12: 12px;
+$font-size-15: 15px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-25: 25px;
+$font-size-30: 30px;
+$font-size-35: 35px;
+
+//breakpoints
+$break-phone-start: 320px;
+$break-new-phone-end: 599px;
+$break-tablet-start: 600px;
+$break-tablet-landscape-start: 920px;
+$break-desktop-start: 1200px;
+
+@mixin grid() {
+    @content;
+}
+
+@mixin small-mobile {
+    @media only screen and (max-width: $break-phone-start) {
+        @content;
+    }
+}
+
+@mixin phone-only {
+    @media only screen and (max-width: $break-new-phone-end) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: $break-tablet-start) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape {
+    @media only screen and (min-width: $break-tablet-landscape-start) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: $break-desktop-start) {
+        @content;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.Home {
+    background-color: $color-blue-lighter;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    .Header {
+        background-color: $color-white;
+        //height: 70px;
+        //justify-content: space-between;
+        color: $color-grey-darker;
+        display: flex;
+        justify-content: space-between;
+
+        &__left {
+            display:flex;
+
+            &-logo {
+                margin-left: 30px;
+                width: 80px;
+                height: 80px;
+                padding: 10px;
+            
+                @include tablet {
+                    width: 80px;
+                    height: 80px;
+                }
+    
+                @include desktop {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+
+        &__right {
+            margin-right: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @include phone-only {
+                flex-wrap: wrap;
+            }
+
+        }
+
+        @include phone-only {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__content {
+        flex-grow: 1;
+        justify-content: center;
+        text-align: center;
+        align-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+
+        &-heading {
+            padding-top: 70px;
+
+            h1 {
+            font-size: $font-size-35;
+            }
+        }
+
+        &-subheadings {
+            max-width: 600px;
+            padding: 10px;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto 0 auto;
+
+            h5 {
+            font-size: $font-size-16;
+            font-weight: 400;
+            }
+        }
+    }
+
+    .Footer {
+        height: 100px;
+        background-color: $color-off-white;
+        color: $color-grey-darkest;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+
+        &-link { 
+            font-size: $font-size-12;
+            @include phone-only {
+                width: 100%;
+                justify-content: center;
+                margin: 10px 0;
+                text-align: center;
+             }
+
+            a {
+                margin: 20px 0px;
+                padding-top: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 5px;
+                text-decoration: none; 
+                color: $color-teal;
+            }
+
+            &-email {
+                font-size: $font-size-12;
+                //margin: 0px 20px;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 5px;
+                text-decoration: none; 
+                color: $color-teal;
+            }
+        }
+
+        a:hover {
+             color: $color-teal-darker;
+             font-weight: 400;
+             border-bottom: 2px solid $color-teal-darker;
+        }
+
+        &-email:hover {
+            color: $color-teal-darker;
+            font-weight: 400;
+            border-bottom: 2px solid $color-teal-darker;
+       }
+
+       a:visited {
+           color: $color-teal;
+
+       }
+        @include phone-only {
+            flex-wrap: wrap;
+        }
+        
+    }
+
+    .Button {
+        padding: 10px;
+        
+        &-outline {
+            border: 2px solid $color-white;
+            background-color: transparent;
+            color: $color-white;
+            padding: 14px 28px;
+            font-size: $font-size-15;
+            border-radius: 30px;
+            margin-bottom: 50px;
+        }
+        
+        &-outline:hover {
+            background-color: $color-white;
+            color: $color-teal;
+            font-weight: 500;
+            //border: 2px solid $color-teal;
+        }
+
+        &-outline:visited {
+            color: $color-white;
+        }
+
+        &-darkerBlock {
+            background-color: $color-teal;
+            border-radius: 5px;
+            font-size: $font-size-12;
+            padding: 10px 20px;
+            border: none;
+            color: $color-white;
+            font-weight: 500;
+            width:125px;
+        }
+
+        &-darkerBlock:hover {
+            background-color: $color-teal-dark;
+            border-radius: 5px;
+            border: none;
+        }
+
+        &-lighterBlock {
+            width:125px;
+            background-color: $color-blue;
+            border-radius: 5px;
+            font-size: $font-size-12;
+            padding: 10px 20px;
+            border: none;
+            color: $color-white;
+            font-weight: 500;
+        }
+
+        &-lighterBlock:hover {
+            background-color: $color-blue-dark;
+            border-radius: 5px;
+            color: $color-white;
+            border: none;
+        }
+    }
+}
+

@@ -1,0 +1,62 @@
+@import "../../../styles/_variables";
+
+.Gallery {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  //TODO: pop these into their own stylesheet doc to make consistent across all pages
+  h1 {
+    font-size: $font-size-35;
+  }
+
+  &__main {
+    height: auto;
+    display: flex;
+
+    align-items: center;
+    color: $color-black;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+}
+
+.covergrid {
+  max-width: 1250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-tile {
+    height: 200px;
+    width: 300px;
+    margin: 30px 30px 50px 30px;
+    background-color: $color-white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &-img {
+      height: 200px;
+      width: 300px;
+    }
+
+    h3 {
+      margin-top: 5px;
+    }
+  }
+}

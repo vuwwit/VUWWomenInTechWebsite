@@ -1,0 +1,106 @@
+@import "../../styles/_variables";
+
+.vuwitlogo {
+  margin: 0;
+}
+
+.Header__left {
+  font-weight: bolder;
+  padding-top: 10px;
+}
+.content {
+  background-color: #fff;
+  padding: 400px;
+}
+
+.Header {
+  background-color: $color-white;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  //justify-content: space-between;
+  color: $color-grey-darker;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.33);
+
+  &__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-logo {
+      margin: 0 30px;
+      width: 80px;
+      height: 80px;
+
+      @include phone-only {
+        justify-content: center;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+
+    &-item {
+      text-decoration: none;
+      padding: 15px;
+      background-color: $color-white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      //padding: 30px;
+      color: $color-grey-darker;
+      font-weight: 400;
+
+      &:hover {
+        background-color: $color-blue-lighter;
+        color: $color-black;
+      }
+
+      &--dropdown {
+        &-item {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__right {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include phone-only {
+      flex-wrap: wrap;
+    }
+
+    &-button {
+      @include phone-only {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  @include phone-only {
+    flex-wrap: wrap;
+  }
+}
+
+.hideOnMobile {
+  display: none;
+
+  @include tablet-landscape {
+    display: flex;
+  }
+}
+
+.showOnMobile {
+  @include tablet-landscape {
+    display: none;
+  }
+}

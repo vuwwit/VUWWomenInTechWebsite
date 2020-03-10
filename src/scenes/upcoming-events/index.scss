@@ -1,0 +1,105 @@
+@import "../../styles/_variables";
+
+.UpcomingEvents {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  //TODO: pop these into their own stylesheet doc to make consistent across all pages
+  h1 {
+    font-size: $font-size-35;
+  }
+
+  h5 {
+    font-size: $font-size-16;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  &__main {
+    height: auto;
+    display: flex;
+
+    align-items: center;
+    color: $color-black;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 50px;
+  }
+}
+
+.eventgrid {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-tile {
+    height: 300px;
+    width: 300px;
+    background-color: $color-white;
+    margin: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &-img {
+      height: 300px;
+      width: 300px;
+    }
+
+    .img {
+      width: 270px;
+      height: 150px;
+      background-color: $color-white;
+      margin: 20px 0;
+    }
+
+    &-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //color: $color-white;
+      //background-color: $color-grey;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      div {
+        margin-top: 20px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .Link-outline {
+          border-color: $color-grey-darker;
+          color: $color-grey-darker;
+        }
+      }
+    }
+
+    &-accent {
+      background-color: $color-green;
+      color: $color-white;
+      justify-content: center;
+    }
+  }
+}

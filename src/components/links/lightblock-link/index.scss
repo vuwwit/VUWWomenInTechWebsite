@@ -1,0 +1,25 @@
+@import "../../../styles/_variables";
+
+.Link {
+  padding: 10px;
+
+  &-lighterBlock {
+    width: 70px;
+    text-align: center;
+    display: inline-block;
+    background-color: $color-blue;
+    border-radius: 5px;
+    font-size: $font-size-12;
+    padding: 10px 20px;
+    border: none;
+    color: $color-white;
+    font-weight: 500;
+  }
+
+  &-lighterBlock:hover {
+    background-color: $color-blue-dark;
+    border-radius: 5px;
+    color: $color-white;
+    border: none;
+  }
+}

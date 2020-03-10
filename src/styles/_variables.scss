@@ -1,0 +1,80 @@
+//colours
+$color-black: #222;
+$color-grey-darkest: #333;
+$color-grey-darker: #555;
+$color-grey: #4c5b5c;
+$color-grey-lighter: #f2f2f2;
+$color-off-white: #fcfcfc;
+$color-white: #fff;
+
+$color-green: #68edc6; //outreach
+$color-purple: #7f00ff; //social
+
+$color-blue-dark: #0678b1;
+$color-blue: #00a6fb; //networking
+$color-blue-lighter: #cde7e8;
+
+$color-teal-darkest: #05668d;
+$color-teal-darker: #2d7288;
+$color-teal: #12a5b7;
+$color-teal-dark: #049693;
+
+$color-yellow: #ffd400;
+$color-yellow-dark: #e6bf00;
+$color-yellow-witcon: #ffe002;
+
+//font sizes
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-15: 15px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-25: 25px;
+$font-size-30: 30px;
+$font-size-35: 35px;
+$font-size-50: 50px;
+
+//breakpoints
+$break-phone-start: 320px;
+$break-new-phone-end: 599px;
+$break-tablet-start: 600px;
+$break-tablet-landscape-start: 920px;
+$break-desktop-start: 1200px;
+
+@mixin grid() {
+  @content;
+}
+
+@mixin small-mobile {
+  @media only screen and (max-width: $break-phone-start) {
+    @content;
+  }
+}
+
+@mixin phone-only {
+  @media only screen and (max-width: $break-new-phone-end) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $break-tablet-start) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media only screen and (min-width: $break-tablet-landscape-start) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $break-desktop-start) {
+    @content;
+  }
+}
+
+a {
+  text-decoration: none;
+}

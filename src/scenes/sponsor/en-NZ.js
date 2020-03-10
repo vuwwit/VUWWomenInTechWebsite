@@ -1,0 +1,23 @@
+export default {
+  TITLE: "Sponsorship - VUW Women in Tech",
+  SPONSORSHIP: "Sponsorship",
+  INTRO: "We have some awesome social, networking, and outreach events planned for 2019, and we need your help to make them happen. As VUWWIT membership remains free, we would appreciate your support to fund these events, so we can continue to provide the events and opportunities we want to give our members.",
+  SPONSOR_WITCON: "Sponsor WITcon19",
+  WITCON: "WITcon, our conference, is our largest event of the year and requires the most support from industry. We have various sponsorship packages available for this event.",
+  WITCON_SPONSORSHIP_PACKAGES: "WITcon sponsorship packages",
+  // NOTE: "Note: We are no longer asking for Gold and Silver sponsorship for WITcon. We would still appreciate sponsorship at the Bronze and Merchandise levels, or welcome any particular cost item you'd like to cover.",
+  NOTE: "Note: We are not accepting any new sponsorship for WITcon19. Please get in touch if you would like to get in early for sponsorship of WITcon 2020.",
+  SPONSOR_OTHER_EVENTS: "Sponsor other events",
+  OTHER_EVENTS: "Additionally to WITcon, we will be running various events throughout the year for which we would appreciate financial support.",
+  IGICTD: "26th April: International Girls in ICT Day Dinner (Networking). Sponsors: Catalyst IT, KiwiWealth",
+  HACKATHON: "31st May & 1st June: Intro to: Hackathons (Workshops). Sponsors: Flux Federation, Hackathons NZ, Hell Pizza",
+  TECH_WK_EVENT: "23rd May: Tech Week Lightning Talks Breakfast (Networking). Sponsors: Pik Pok",
+  TDFG: "5th July: Tech Day for Girls (Outreach). Sponsors: Xero, Google. Partners: Aura Security, Catalyst IT, Microsoft",
+  QUIZ: "15th July: Quiz Night (Social). Partners: Summer of Tech",
+  DONATION_500: "For these events, we ask for a donation of $500 to help cover some of our costs so ticket prices for students can be as low as possible (or ideally, free!). In return, we will put your company name on our event, allow you to bring any company promotional material for distribution, and (if appropriate) give you 30-60 seconds on the stage to talk up your company to our members. Please contact us and let us know which event you would like your donation to be allocated.",
+  DONATION_OTHER: "Of course, the $500 donation is just a suggestion - we greatly appreciate donations of any amount, or alternatively vouchers for giveaways/prizes, or providing a venue for events.",
+  OTHER_SUPPORT: "Workshops and seminars",
+  WORKSHOPS: "If you would rather not provide financial support, we need passionate people to run workshops or seminars for our members. If you are interested in providing a hands-on workshop or have a lecture-style talk you would like to give to our members, please get in touch.",
+  WANT_TO_SPONSOR: "I want to sponsor",
+  MAILTO: "mailto:vuwwit@gmail.com?subject=I%27m%20interested%20in%20sponsoring%20VUWWIT"
+};

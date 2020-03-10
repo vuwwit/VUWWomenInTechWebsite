@@ -1,0 +1,258 @@
+@import "../../../styles/_variables";
+//@import '../../../images/sponsor-gold.png';
+
+.Witcon18 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  //TODO: pop these into their own stylesheet doc to make consistent across all pages
+  h1 {
+    font-size: $font-size-35;
+  }
+
+  h2 {
+    font-size: $font-size-30;
+  }
+
+  h3 {
+    text-justify: inter-word;
+  }
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .sub {
+    font-size: $font-size-12;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  &__landing {
+    height: auto;
+
+    &-main {
+      margin-top: 150px;
+      flex-grow: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      padding: 20px;
+
+      @include tablet {
+        margin-top: -50px;
+        //min-height: 100vh;
+      }
+      &-img {
+        opacity: 0.8;
+        width: 100%;
+      }
+
+      &-heading {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  &__sponsors {
+    background-color: $color-white;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    //min-height: 100vh;
+    flex-direction: column;
+
+    h4 {
+      line-height: 30px;
+    }
+
+    &-gold,
+    &-silver {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      img {
+        height: 80px;
+        margin: 20px;
+      }
+    }
+  }
+  &__images {
+    background-color: $color-grey-darker;
+    width: 100%;
+    padding: 50px;
+
+    h3 {
+      color: $color-white;
+    }
+  }
+
+  &__eventhost {
+    background-color: $color-yellow;
+    opacity: 0.8;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-tile {
+      display: flex;
+      flex-direction: column;
+
+      @include tablet {
+        display: flex;
+        flex-direction: row;
+      }
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img {
+          width: 300px;
+          background-color: $color-teal;
+          margin: 50px;
+        }
+      }
+
+      &-right {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+      }
+    }
+  }
+
+  &__panel {
+    background-color: $color-blue-lighter;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1000px;
+      }
+
+      &-tile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+
+        &-img {
+          height: 150px;
+          width: 150px;
+          background-color: $color-teal;
+          border-radius: 100px;
+          margin: 10px;
+        }
+
+        &-descrip {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  &__speakers {
+    padding: 50px;
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 700px;
+
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      &-handles {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        @include tablet {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+
+      &-tile {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        padding-top: 20px;
+        border-bottom: 1px solid $color-blue-lighter;
+
+        @include tablet {
+          display: flex;
+          flex-direction: row;
+          margin-top: -20px;
+        }
+
+        .img {
+          width: 300px;
+          height: 200px;
+          margin: 40px auto;
+          background-color: $color-teal;
+        }
+
+        &-right {
+          display: flex;
+          flex-direction: column;
+          margin-left: 40px;        
+          margin-top: 20px;
+
+          h3 {
+            line-height: 25px;
+            font-weight: 500;
+            letter-spacing: 0;
+            text-align: justify;
+            text-justify: inter-word;
+          }
+
+          p {
+            margin-top: -10px;
+            text-align: justify;
+            text-justify: inter-word;
+            font-size: $font-size-15;
+            line-height: 20px;
+          }
+
+          .Link-outline {
+            color: $color-teal;
+            border: 1px solid $color-grey-darker;
+          }
+        }
+      }
+    }
+  }
+}

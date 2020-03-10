@@ -1,0 +1,78 @@
+@import "../../styles/_variables";
+
+.Mentoring {
+  min-height: 100vh;
+  max-width: 800px;
+  padding: 50px 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  //TODO: pop these into their own stylesheet doc to make consistent across all pages
+  h1 {
+    font-size: $font-size-35;
+    color: $color-grey-darker;
+    margin-top: 60px;
+  }
+
+  h2 {
+    font-size: $font-size-25;
+    color: $color-grey-darker;
+    text-align: center;
+  }
+
+  p, li {
+    font-size: $font-size-16;
+    font-weight: 400;
+    line-height: 26px;
+    color: $color-grey-darker;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    padding: 10px;
+    border: 1px dashed $color-grey-darker;
+    text-align: left;
+    font-size: $font-size-16;
+    line-height: 26px;
+    color: $color-grey-darker;
+  }
+
+  &-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-item {
+      max-width: 400px;
+    }
+
+    li {
+      padding: 2px;
+      text-align: left;
+    }
+
+    @include phone-only {
+      flex-direction: column;
+    }
+  }
+
+  .Link-outline {
+    color: $color-grey-darker;
+    border: 2px solid $color-grey-darker;
+    background-color: $color-white;
+  }
+
+  .Link-outline:hover {
+    color: $color-white;
+    background-color: $color-grey-darker;
+  }
+}
