@@ -1,3 +1,10 @@
+# Development branch
+
+This branch can be used for development or for individuals to test
+things out. The changes made in the development branch can be merged
+into master which deploys to Netlify.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
