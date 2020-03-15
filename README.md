@@ -75,3 +75,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 master branch is deployed to womenintech.nz with Netlify
+
+from development
