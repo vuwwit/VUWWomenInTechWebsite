@@ -43,7 +43,7 @@ class Home extends Component {
             <p className="role">{strings.OUTREACH}</p>
             
             <h2>{strings.WITCON}</h2>
-            <p><a href="https://womenintech.nz/witcon-2019">{strings.WITCON_INFO}</a></p>
+            <p><a href="https://womenintech.nz/witcon-2020">{strings.WITCON_INFO}</a></p>
 
             <p><i>{strings.CHECK_OUT_OUR} <a href="/upcoming-events">{strings.UPCOMING_EVENTS}</a> {strings.FOR_ALL_THE_EVENTS}</i></p>
           </div>

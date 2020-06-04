@@ -72,12 +72,12 @@ export default {
   THEME_6: "Theme 6:",
   DISCUSSION_AND_DISCOVERY:
     "Discussion and discovery in other STEAM industries - Chemistry, Physics, Astronomy, Biology, Maths, Design, etc.",
-  // SUBMIT_A_TALK: "Submit a talk",
-  // SPEAKER_SUBMISSIONS_TITLE: "Speak at WITcon19",
-  // SPEAKER_SUBMISSIONS_ARE_OPEN: "We are inviting speaker submissions for WITcon19 from ",
-  // SPEAKER_DATES: "9am 11 March to 6pm 25 June",
-  // WE_WANT_TO_HEAR: ". We want to hear from anyone and everyone!",
-  // SPEAKER_SUBMIT_LINK: "https://goo.gl/forms/81LegPkTn5Y06bHR2",
+   SUBMIT_A_TALK: "Submit a talk",
+   SPEAKER_SUBMISSIONS_TITLE: "Speak at WITcon20",
+   SPEAKER_SUBMISSIONS_ARE_OPEN: "We are inviting speaker submissions for WITcon20 untill ",
+   SPEAKER_DATES: "30th June 11:59pm NZT",
+   WE_WANT_TO_HEAR: ". We want to hear from anyone and everyone!",
+   SPEAKER_SUBMIT_LINK: "https://forms.gle/WuBSm6FREGzmE5j5A",
   
   //Sponsor paragraph
   SPONSORSHIP: "Sponsorship",

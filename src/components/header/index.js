@@ -36,11 +36,7 @@ class Header extends Component {
               {strings.WITCON}
             </div>
           </Link>
-          <Link to="/mentoring">
-            <div className={cn("Header__left-item", "hideOnMobile")}>
-              {strings.MENTORING}
-            </div>
-          </Link>
+
           <Link to="/gallery">
             <div className={cn("Header__left-item", "hideOnMobile")}>
               {strings.GALLERY}

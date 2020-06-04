@@ -26,7 +26,7 @@ import Gallery_tdfg19 from "./scenes/gallery/tdfg19";
 import Gallery_hackathon19 from "./scenes/gallery/hackathon19";
 import Committee from "./scenes/about/committee";
 import Media from "./scenes/media";
-import Mentoring from "./scenes/mentoring";
+//import Mentoring from "./scenes/mentoring";
 
 const Main = () => (
   <main>
@@ -56,7 +56,7 @@ const Main = () => (
       <Route path="/hackathon19" component={Gallery_hackathon19} />
       <Route path="/about-committee" component={Committee} />
       <Route path="/media" component={Media} />
-      <Route path="/mentoring" component={Mentoring} />
+
     </Switch>
   </main>
 );

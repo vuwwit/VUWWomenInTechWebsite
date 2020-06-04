@@ -11,7 +11,7 @@ import pwc from "../../../images/witconlogos/pwc-logo.png";
 import witconaudience from "../../../images/witcon18.jpg";
 import OutlineLink from "../../../components/links/outlined-link";
 import diana from "../../../images/gallery/witcon18/witcon18-7.jpg";
-import chris from "../../../images/gallery/witcon18/witcon18-1compressed.jpg";
+import chris from "../../../images/gallery/witcon18/witcon18-1.jpg";
 import karen from "../../../images/gallery/witcon18/witcon18-18.jpg";
 import grant from "../../../images/gallery/witcon18/witcon18-10.jpg";
 import kate from "../../../images/gallery/witcon18/witcon18-22.jpg";

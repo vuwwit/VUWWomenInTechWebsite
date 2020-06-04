@@ -16,6 +16,7 @@ import tdfg19 from "../../../images/gallery/tdfg19/tdfg19-1.JPG";
 import hackathon19 from "../../../images/gallery/hackathon19/hackathon19-1.jpg";
 import ball19photobooth from "../../../images/gallery/ball19/ball19photobooth-cover.JPG";
 import ball19 from "../../../images/gallery/ball19/ball19-160.jpg";
+import bbq20 from "../../../images/gallery/bbq20/BBQ2020Thumbnail.png";
 import MetaTags from 'react-meta-tags';
 
 class Gallery extends Component {
@@ -29,6 +30,10 @@ class Gallery extends Component {
             <h1>{strings.GALLERY_TITLE}</h1>
             <div className="covergrid">
 
+                <div className="covergrid-tile">
+                    <a href="https://photos.app.goo.gl/ZDBN8vVDyrrYeUhT6"><img src={bbq20} alt="bbq 2020" className="covergrid-tile-img" /></a>
+                    <h3>BBQ 2020</h3>
+                </div>
                 <div className="covergrid-tile">
                     <a href="/ball19"><img src={ball19} alt="ball 2019" className="covergrid-tile-img" /></a>
                     <h3>STEM Ball 2019</h3>

@@ -26,7 +26,7 @@
 
     @include phone-only {
       img {
-        width: 400px;
+        width: 4000px;
       }
     }
   }
@@ -35,7 +35,7 @@
     height: auto;
 
     &-main {
-      background-color: $color-yellow;
+      background-color: #f1bc36;
       align-items: center;
       flex-grow: 1;
       justify-content: center;

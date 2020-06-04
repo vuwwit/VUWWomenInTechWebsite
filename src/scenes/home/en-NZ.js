@@ -53,13 +53,13 @@ export default {
     PRESIDENT: "President: Angitha Ramesh",
     SECRETARY: "Secretary: Lavanya Sajwan",
     TREASURER: "Treasurer: Rachel Crosland",
-    EVENTSROLE: "Events Coordinator: Wainui Witika-Park",
+    EVENTSROLE: "Events Coordinator: Heenal Patel",
     CAMPAIGNS: "Campaigns Liaison: Sanjana Manocha",
     MEDIA: "Media Liaison: Melina Ariyani",
     NETWORKING: "Networking Officer: Henry Bai",
     WORKSHOPS: "Workshops Officer: Meg Fahey",
     OUTREACH: "Outreach Officer: Samantha Glanfield",
-    SOCIAL: "Social Officer: Cindy Cruz",
+    SOCIAL: "Social Officer: Stephanie Hema",
     WEB: "Web Developer: Jasna Joseph",
     // AGM: "VUWWIT AGM 2019",
     // AGM_INFO: "Everyone is invited to the VUWWIT AGM, where we’ll do a debrief of the year, make some plans for next year, and lock in our 2020 Committee. Pizza will be provided. Nominations will close on Sunday 15 September 5pm, after which we will release a voting form for our entire community to vote in the new Committee for 2020. Voting will close 1 hour before AGM commences.",
@@ -80,7 +80,7 @@ export default {
    // REGISTER: "Register for the event.",
 
     WITCON: "WITcon",
-    WITCON_INFO: "Check out the talks and photos from WITcon19."
+    WITCON_INFO: "Check out WITCon 2020"
     // WITCON_INFO: "A student-led one-day conference designed to bring students and industry together to discuss social and technical topics surrounding STEM.",
     // WITCON_TICKETS: "Buy your ticket now.",
     // LEARN_MORE: "Learn more.",

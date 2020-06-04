@@ -4,5 +4,5 @@ export default {
   PAST: "PAST EVENTS:",
   COMING_UP: "REGISTRATIONS OPEN:",
   FUTURE: "KEEP AN EYE OUT:",
-  CLICK_EVENTS: "Keep an eye out for our 2020 events!"
+  CLICK_EVENTS: "Register yourself for 2020 events!"
 };

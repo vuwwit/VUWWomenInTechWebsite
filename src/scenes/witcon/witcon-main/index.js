@@ -5,10 +5,10 @@ import gold from "../../../images/sponsor-gold.png";
 import silver from "../../../images/sponsor-silver.png";
 import bronze from "../../../images/sponsor-bronze.png";
 import merch from "../../../images/sponsor-merchandise.png";
-// import banner from "../../../images/witcon-banner.png";
+ import banner from "../../../images/WITCon 2020.png";
 
 import OutlineLinkInternal from "../../../components/links/outlined-link-internal";
-// import LighterBlockLink from "../../../components/links/lightblock-link";
+import LighterBlockLink from "../../../components/links/lightblock-link";
 import cn from "classnames";
 import MetaTags from 'react-meta-tags';
 
@@ -24,18 +24,16 @@ class Witcon extends Component {
         {/* TODO have main div, speakers div, sponsors div be their own components */}
         <div className="Witcon__landing">
           <div className="Witcon__landing-main">
-            {/* <div className="Witcon__banner">
+            { <div className="Witcon__banner">
               <img src={banner} alt="silver-sponsor" className="medal-img" />
-            </div> */}
-            <div className="Witcon__landing-main-heading">
-              <h1>{strings.WITCON}</h1>
-            </div>
+            </div> }
+
             <div className="Witcon__landing-main-paragraph">
               <p>{strings.WITCON_IS_A_ONE_DAY}</p>
               <p>{strings.THIS_CONFERENCE_WAS_DESIGNED}</p>
               <p>{strings.WITCON_IS_A_GREAT_OPPORTUNITY}</p>
               <p>{strings.TIP}</p>
-              <p><b>{strings.WITCON19_FINISHED} <a href={"/witcon-2019"}>{strings.WITCON19_MORE}</a></b></p>
+              <p><b> <a href={"/witcon-2019"}>{strings.WITCON19_MORE}</a></b></p>
             </div>
           </div>
         </div>
@@ -146,11 +144,11 @@ class Witcon extends Component {
               </div>
             </div>
           </div>
-          {/* <div className="Witcon__speakers-submit">
+          { <div className="Witcon__speakers-submit">
             <h3>{strings.SPEAKER_SUBMISSIONS_TITLE}</h3>
             <p>{strings.SPEAKER_SUBMISSIONS_ARE_OPEN}<b>{strings.SPEAKER_DATES}</b>{strings.WE_WANT_TO_HEAR}</p>
             <LighterBlockLink link={strings.SPEAKER_SUBMIT_LINK} label={strings.SUBMIT_A_TALK}/>
-          </div> */}
+          </div> }
         </div>
 
         <div id="sponsors" className="Witcon__sponsors">
