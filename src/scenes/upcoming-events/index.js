@@ -33,6 +33,8 @@ import TechdayforGirls2020 from "../../images/upcoming-events/3.png";
 import BBQ2020 from "../../images/upcoming-events/5.png";
 import Gamesnight2020 from "../../images/upcoming-events/6.png";
 import STEMball2020 from "../../images/upcoming-events/7.png";
+import Atlassian2020 from "../../images/upcoming-events/8.png";
+import DataScience2020 from "../../images/upcoming-events/9.png";
 import MetaTags from 'react-meta-tags';
 
 class UpcomingEvents extends Component {
@@ -86,7 +88,16 @@ class UpcomingEvents extends Component {
                 <img src={BBQ2020} alt="BBQ2020-poster" className="eventgrid-tile-img" />
                 </a>
               </div>
-
+              <div className="eventgrid-tile">
+                <a href="https://www.facebook.com/events/1327338777657887/">
+                  <img src={Atlassian2020} alt="Atlassian2020-poster" className="eventgrid-tile-img" />
+                </a>
+              </div>
+              <div className="eventgrid-tile">
+                <a href="https://www.facebook.com/events/224527662296723/">
+                  <img src={DataScience2020} alt="DataScience2020-poster" className="eventgrid-tile-img" />
+                </a>
+              </div>
 
 
               <div className="eventgrid-tile">
