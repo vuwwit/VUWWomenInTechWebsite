@@ -89,12 +89,12 @@ class UpcomingEvents extends Component {
                 </a>
               </div>
               <div className="eventgrid-tile">
-                <a href="https://www.facebook.com/events/1327338777657887/">
+                <a href="https://www.facebook.com/events/224527662296723/">
                   <img src={Atlassian2020} alt="Atlassian2020-poster" className="eventgrid-tile-img" />
                 </a>
               </div>
               <div className="eventgrid-tile">
-                <a href="https://www.facebook.com/events/224527662296723/">
+                <a href="https://www.facebook.com/events/1327338777657887/">
                   <img src={DataScience2020} alt="DataScience2020-poster" className="eventgrid-tile-img" />
                 </a>
               </div>
