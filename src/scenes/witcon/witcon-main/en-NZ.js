@@ -82,7 +82,7 @@ export default {
 
   AttendWitcon_Title: "Attend WITCon20",
   AttendWitcon_Body: "Don't miss out on WITCon20 and the opportunity to listen to some amazing ideas, and experiences. Tickets are now live and start from ONLY $12. Tickets include entry to the event, a free swag bag, lunch, and networking opportunities that could help you land a new job or employee.",
-  AttendWitcon_Link: "witcon20.lilregie.com",
+  AttendWitcon_Link: "https://witcon20.lilregie.com/booking/attendees/new",
   AttendWitcon_Ticket: "Get a Ticket",
 
   //Sponsor paragraph

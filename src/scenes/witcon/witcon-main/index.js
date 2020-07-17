@@ -25,7 +25,7 @@ class Witcon extends Component {
         <div className="Witcon__landing">
           <div className="Witcon__landing-main">
             { <div className="Witcon__banner">
-             <a href={"witcon20.lilregie.com"}>
+             <a href={"https://witcon20.lilregie.com/booking/attendees/new"}>
                <img src={banner} alt="silver-sponsor" className="medal-img" />
              </a>
 
