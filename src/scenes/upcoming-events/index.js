@@ -35,6 +35,7 @@ import Gamesnight2020 from "../../images/upcoming-events/6.png";
 import STEMball2020 from "../../images/upcoming-events/7.png";
 import Atlassian2020 from "../../images/upcoming-events/8.png";
 import DataScience2020 from "../../images/upcoming-events/9.png";
+import LockPicking2020 from "../../images/upcoming-events/10.png";
 import MetaTags from 'react-meta-tags';
 
 class UpcomingEvents extends Component {
@@ -50,15 +51,12 @@ class UpcomingEvents extends Component {
             <h2>{strings.CLICK_EVENTS}</h2>
 
             <div className="eventgrid">
-
               <div className="eventgrid-tile">
-                <a href="https://tdfg.lilregie.com/">
-                  <img src={TechdayforGirls2020} alt="TechdayforGirls2020-poster" className="eventgrid-tile-img" />
+                <a href="https://security-lockpicking-workshop-with-aura-security.lilregie.com/">
+                  <img src={LockPicking2020} alt="LockPicking2020-poster" className="eventgrid-tile-img" />
                 </a>
               </div>
-              <div className="eventgrid-tile">
-                <img src={Hackathon2020} alt="Hackathon2020-poster" className="eventgrid-tile-img" />
-              </div>
+
               <div className="eventgrid-tile">
                 <a href="https://www.facebook.com/events/2574452326144463/">
                 <img src={WITCon2020} alt="WITCon2020-poster" className="eventgrid-tile-img" />
@@ -77,6 +75,14 @@ class UpcomingEvents extends Component {
 
               <div className={cn("eventgrid-tile", "eventgrid-tile-title")}>
                 <h2>{strings.PAST}</h2>
+              </div>
+              <div className="eventgrid-tile">
+                <a href="https://tdfg.lilregie.com/">
+                  <img src={TechdayforGirls2020} alt="TechdayforGirls2020-poster" className="eventgrid-tile-img" />
+                </a>
+              </div>
+              <div className="eventgrid-tile">
+                <img src={Hackathon2020} alt="Hackathon2020-poster" className="eventgrid-tile-img" />
               </div>
               <div className="eventgrid-tile">
                 <a href="https://www.facebook.com/events/857679701385649/">

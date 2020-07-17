@@ -25,7 +25,10 @@ class Witcon extends Component {
         <div className="Witcon__landing">
           <div className="Witcon__landing-main">
             { <div className="Witcon__banner">
-              <img src={banner} alt="silver-sponsor" className="medal-img" />
+             <a href={"witcon20.lilregie.com"}>
+               <img src={banner} alt="silver-sponsor" className="medal-img" />
+             </a>
+
             </div> }
 
             <div className="Witcon__landing-main-paragraph">
@@ -107,6 +110,11 @@ class Witcon extends Component {
             </table>
           </div>
         </div> */}
+        {  <div className="Witcon__speakers-submit">
+            <h3>{strings.AttendWitcon_Title}</h3>
+            <p>AttendWitcon_Body</p>
+            <LighterBlockLink link={strings.AttendWitcon_Link} label={strings.AttendWitcon_Ticket}/>
+          </div> }
         <div id="speakers" className="Witcon__speakers">
           <div className="Witcon__speakers-top">
             <h1>{strings.SPEAKERS}</h1>
@@ -144,11 +152,11 @@ class Witcon extends Component {
               </div>
             </div>
           </div>
-          { <div className="Witcon__speakers-submit">
+         {  /*<div className="Witcon__speakers-submit">
             <h3>{strings.SPEAKER_SUBMISSIONS_TITLE}</h3>
             <p>{strings.SPEAKER_SUBMISSIONS_ARE_OPEN}<b>{strings.SPEAKER_DATES}</b>{strings.WE_WANT_TO_HEAR}</p>
             <LighterBlockLink link={strings.SPEAKER_SUBMIT_LINK} label={strings.SUBMIT_A_TALK}/>
-          </div> }
+          </div> */}
         </div>
 
         <div id="sponsors" className="Witcon__sponsors">

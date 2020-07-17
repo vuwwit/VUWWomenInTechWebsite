@@ -54,7 +54,8 @@ export default {
 
   //Speakers paragraph
   SPEAKERS: "Speakers",
-  WE_INVITE_TALKS: "We invite talks from any student or industry member with a passion for science, engineering, technology, design, and more. We want to fit as many voices as possible into this one-day conference, so we ask that full papers are approximately 15 minutes (and no longer than 20 minutes) to allow for a bit of question time at the end of each presentation. These abstracts can include research insights and case studies, and should cover any of the following themes:",
+  WE_INVITE_TALKS: "Speaker submissions have closed and we're now announcing all our speakers one by one. Keep and eye out on all our socials to see the amazing people who will speak at WITCon20. All talks will be on one of the following six themes:",
+  //WE_INVITE_TALKS: "We invite talks from any student or industry member with a passion for science, engineering, technology, design, and more. We want to fit as many voices as possible into this one-day conference, so we ask that full papers are approximately 15 minutes (and no longer than 20 minutes) to allow for a bit of question time at the end of each presentation. These abstracts can include research insights and case studies, and should cover any of the following themes:",
   // SIX_TALKS: "Talks at WITcon19 have been submitted based on the following themes:",
   THEME_1: "Theme 1:",
   DIVERSITY_IN:
@@ -78,7 +79,12 @@ export default {
    SPEAKER_DATES: "30th June 11:59pm NZT",
    WE_WANT_TO_HEAR: ". We want to hear from anyone and everyone!",
    SPEAKER_SUBMIT_LINK: "https://forms.gle/WuBSm6FREGzmE5j5A",
-  
+
+  AttendWitcon_Title: "Attend WITCon20",
+  AttendWitcon_Body: "Don't miss out on WITCon20 and the opportunity to listen to some amazing ideas, and experiences. Tickets are now live and start from ONLY $12. Tickets include entry to the event, a free swag bag, lunch, and networking opportunities that could help you land a new job or employee.",
+  AttendWitcon_Link: "witcon20.lilregie.com",
+  AttendWitcon_Ticket: "Get a Ticket",
+
   //Sponsor paragraph
   SPONSORSHIP: "Sponsorship",
   // SPONSORS_THANKYOU: "WITcon could not happen without support from local companies. Thank you to our incredible sponsors.",
