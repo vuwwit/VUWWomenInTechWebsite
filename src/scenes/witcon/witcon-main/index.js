@@ -110,11 +110,11 @@ class Witcon extends Component {
             </table>
           </div>
         </div> */}
-        {  <div align={"center"} className="Witcon__speakers-submit">
+          <div align={"center"} className="Witcon__speakers">
             <h3>{strings.AttendWitcon_Title}</h3>
             <p>{strings.AttendWitcon_Body}</p>
             <LighterBlockLink link={strings.AttendWitcon_Link} label={strings.AttendWitcon_Ticket}/>
-          </div> }
+          </div> 
         <div id="speakers" className="Witcon__speakers">
           <div className="Witcon__speakers-top">
             <h1>{strings.SPEAKERS}</h1>
