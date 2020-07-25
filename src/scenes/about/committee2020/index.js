@@ -143,7 +143,7 @@ class Committee extends Component {
 
                 <div className="committee-tile">
                   <div>
-                    <img src={MALINA} alt="MALINA" className="img" />
+
                   </div>
                   <div className="committee-tile-name">
                     <div>
@@ -169,7 +169,7 @@ class Committee extends Component {
 
                 <div className="committee-tile">
                   <div>
-                    <img src={Sanjana} alt="Sanjana" className="img" />
+                    
                   </div>
                   <div className="committee-tile-name">
                     <div>
@@ -196,7 +196,7 @@ class Committee extends Component {
 
                 <div className="committee-tile">
                   <div>
-                    <img src={Samantha} alt="heenal" className="img" />
+
                   </div>
                   <div className="committee-tile-name">
                     <div>
@@ -222,7 +222,7 @@ class Committee extends Component {
 
                 <div className="committee-tile">
                   <div>
-                    <img src={Samantha} alt="Samantha" className="img" />
+
                   </div>
                   <div className="committee-tile-name">
                     <div>
@@ -248,7 +248,7 @@ class Committee extends Component {
 
                 <div className="committee-tile">
                   <div>
-                    <img src={Samantha} alt="Meg" className="img" />
+
                   </div>
                   <div className="committee-tile-name">
                     <div>
@@ -274,7 +274,7 @@ class Committee extends Component {
 
                 <div className="committee-tile">
                   <div>
-                    <img src={Samantha} alt="Henry" className="img" />
+
                   </div>
                   <div className="committee-tile-name">
                     <div>
