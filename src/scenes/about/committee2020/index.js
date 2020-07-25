@@ -4,16 +4,16 @@ import "./index.scss";
 import OutlineButton from "../../../components/buttons/outlined-button";
 import CommitteeModal from "../components/committee-modal";
 import OutlineLink from "../../../components/links/outlined-link";
-import aleisha from "../../../images/committee/aleisha.jpg";
-import laurie from "../../../images/committee/laurie.png";
+import Samantha from "../../../images/committee/all2020.jpg";
 import lavanya from "../../../images/committee/lavanya.jpg";
 import rachel from "../../../images/committee/rachel.jpg";
-import wainui from "../../../images/committee/wainui.jpg";
+import jasna from "../../../images/committee/jasna.jpg";
 import angitha from "../../../images/committee/angitha.jpg";
 import support from "../../../images/committee/support.jpg";
-import terahui from "../../../images/committee/terahui.png";
-import maisie from "../../../images/committee/maisie.png";
-import steph from "../../../images/committee/steph.jpg";
+import Stephanie from "../../../images/committee/steph.jpg";
+import Sanjana from "../../../images/committee/all2020.jpg";
+import MALINA from "../../../images/committee/all2020.jpg";
+
 import MetaTags from 'react-meta-tags';
 
 const strings = lang;
@@ -62,54 +62,25 @@ class Committee extends Component {
               </div>
 
               <div className="Committee__main-gallery-group">
-                {/* ALEISHA  */}
+
                 <div className="committee-tile">
                   <div>
-                    <img src={aleisha} alt="aleisha" className="img" />
+                    <img src={angitha} alt="angitha" className="img" />
                   </div>
                   <div className="committee-tile-name">
                     <div>
-                      <h3>{strings.ALEISHA_AMOHIA}</h3>
+                      <h3>{strings.ANGITHA_RAMESH}</h3>
                       <h4>{strings.PRESIDENT}</h4>
                     </div>
                     <div>
                       <OutlineButton
                           onClick={() =>
                               this.handleOnClick(
-                                  strings.ALEISHA_AMOHIA,
-                                  strings.PRESIDENT,
-                                  strings.ALEISHAS_JOB,
-                                  strings.IM_SO_EXCITED,
-                                  strings.I_JOINED_THE_COMMITTEE,
-                                  ""
-                              )
-                          }
-                          label={strings.MORE_ABOUT_ALEISHA}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/*   ANGITHA  */}
-                <div className="committee-tile">
-                  <div>
-                    <img src={angitha} alt="Angitha" className="img"/>
-                  </div>
-                  <div className="committee-tile-name">
-                    <div>
-                      <h3>{strings.ANGITHA_RAMESH}</h3>
-                      <h4>{strings.SECRETARY}</h4>
-                    </div>
-                    <div>
-                      <OutlineButton
-                          onClick={() =>
-                              this.handleOnClick(
                                   strings.ANGITHA_RAMESH,
-                                  strings.SECRETARY,
-                                  strings.ANGITHA_TAKES_CARE,
-                                  strings.HEY_IM_A_THIRD,
-                                  strings.WE_HAVE_AN_EXCITING,
-                                  angitha
+                                  strings.PRESIDENT,
+                                  strings.MORE_ABOUT_ANGITHA,
+                                  strings.PRESIDENT_About,
+                                  ""
                               )
                           }
                           label={strings.MORE_ABOUT_ANGITHA}
@@ -117,85 +88,7 @@ class Committee extends Component {
                     </div>
                   </div>
                 </div>
-                {/* STEPHANIE  */}
-                <div className="committee-tile">
-                  <div>
-                    <img src={steph} alt="Stephanie" className="img" />
-                  </div>
-                  <div className="committee-tile-name">
-                    <div>
-                      <h3>{strings.STEPHANIE_HEMA}</h3>
-                      <h4>{strings.TREASURER}</h4>
-                    </div>
-                    <div>
-                      <OutlineButton
-                          onClick={() =>
-                              this.handleOnClick(
-                                  strings.STEPHANIE_HEMA,
-                                  strings.TREASURER,
-                                  strings.STEPHANIES_JOB,
-                                  strings.CURRENTLY_THIRD_YEAR,
-                                  strings.STEPHANIE_JOINED_VUWWIT
-                              )
-                          }
-                          label={strings.MORE_ABOUT_STEPHANIE}
-                      />
-                    </div>
-                  </div>
-                </div>
-                {/* MAISIE  */}
-                <div className="committee-tile">
-                  <div>
-                    <img src={maisie} alt="maisie" className="img" />
-                  </div>
-                  <div className="committee-tile-name">
-                    <div>
-                      <h3>{strings.MAISIE_EMBLETON}</h3>
-                      <h4>{strings.EVENTS_COORDINATOR}</h4>
-                    </div>
-                    <div>
-                      <OutlineButton
-                          onClick={() =>
-                              this.handleOnClick(
-                                  strings.MAISIE_EMBLETON,
-                                  strings.EVENTS_COORDINATOR,
-                                  strings.MAISIE_IS_THE,
-                                  strings.CURRENTLY_ENTERING,
-                                  strings.IM_SUPER
-                              )
-                          }
-                          label={strings.MORE_ABOUT_MAISIE}
-                      />
-                    </div>
-                  </div>
-                </div>
-                {/* RACHEL  */}
-                <div className="committee-tile">
-                  <div>
-                    <img src={rachel} alt="rachel" className="img" />
-                  </div>
-                  <div className="committee-tile-name">
-                    <div>
-                      <h3>{strings.RACHEL_CROSLAND}</h3>
-                      <h4>{strings.SPONSORSHIP_FUNDRAISING_OFFICER}</h4>
-                    </div>
-                    <div>
-                      <OutlineButton
-                          onClick={() =>
-                              this.handleOnClick(
-                                  strings.RACHEL_CROSLAND,
-                                  strings.SPONSORSHIP_FUNDRAISING_OFFICER,
-                                  strings.RACHEL_IS_IN,
-                                  strings.RACHEL_THIRD_YEAR,
-                                  strings.RACHEL_JOINED_VUWWIT
-                              )
-                          }
-                          label={strings.MORE_ABOUT_RACHEL}
-                      />
-                    </div>
-                  </div>
-                </div>
-                {/* LAVANYA  */}
+
                 <div className="committee-tile">
                   <div>
                     <img src={lavanya} alt="lavanya" className="img" />
@@ -203,17 +96,17 @@ class Committee extends Component {
                   <div className="committee-tile-name">
                     <div>
                       <h3>{strings.LAVANYA_SAJWAN}</h3>
-                      <h4>{strings.NETWORKING_LIAISON}</h4>
+                      <h4>{strings.SECRETARY}</h4>
                     </div>
                     <div>
                       <OutlineButton
                           onClick={() =>
                               this.handleOnClick(
                                   strings.LAVANYA_SAJWAN,
-                                  strings.NETWORKING_LIAISON,
-                                  strings.LAVANYA_ORGANISES,
-                                  strings.HI_IM_LAVANYA,
-                                  strings.I_REALLY_WANTED_TO_BE_INVOLVED
+                                  strings.SECRETARY,
+                                  strings.MORE_ABOUT_LAVANYA,
+                                  strings.SECRETARY_About,
+                                  ""
                               )
                           }
                           label={strings.MORE_ABOUT_LAVANYA}
@@ -221,85 +114,242 @@ class Committee extends Component {
                     </div>
                   </div>
                 </div>
-                {/* LAURIE  */}
+
                 <div className="committee-tile">
                   <div>
-                    <img src={laurie} alt="laurie" className="img" />
+                    <img src={rachel} alt="rachel" className="img" />
                   </div>
                   <div className="committee-tile-name">
                     <div>
-                      <h3>{strings.LAURIE_HYDE}</h3>
-                      <h4>{strings.OUTREACH_LIAISON}</h4>
+                      <h3>{strings.RACHEL_CROSLAND}</h3>
+                      <h4>{strings.TREASURER}</h4>
                     </div>
                     <div>
                       <OutlineButton
                           onClick={() =>
                               this.handleOnClick(
-                                  strings.LAURIE_HYDE,
-                                  strings.OUTREACH_LIAISON,
-                                  strings.LAURIE_ORGANISES,
-                                  strings.HIYA_IM_LAURIE,
-                                  strings.I_JOINED_VUWWIT
-                              )
-                          }
-                          label={strings.MORE_ABOUT_LAURIE}
-                      />
-                    </div>
-                  </div>
-                </div>
-                {/* TE RAHUI  */}
-                <div className="committee-tile">
-                  <div>
-                    <img src={terahui} alt="terahui" className="img" />
-                  </div>
-                  <div className="committee-tile-name">
-                    <div>
-                      <h3>{strings.TE_RAHUI_TUNUA}</h3>
-                      <h4>{strings.WORKSHOPS_LIAISON}</h4>
-                    </div>
-                    <div>
-                      <OutlineButton
-                          onClick={() =>
-                              this.handleOnClick(
-                                  strings.TE_RAHUI_TUNUA,
-                                  strings.WORKSHOPS_LIAISON,
-                                  strings.TE_RAHUI_ORGANISES,
-                                  strings.TE_RAHUI_INTRO,
+                                  strings.RACHEL_CROSLAND,
+                                  strings.TREASURER,
+                                  strings.MORE_ABOUT_RACHEL,
+                                  strings.TREASURER_About,
                                   ""
                               )
                           }
-                          label={strings.MORE_ABOUT_TE_RAHUI}
-                      />
-                    </div>
-                  </div>
-                </div>
-                {/* WAINUI  */}
-                <div className="committee-tile">
-                  <div>
-                    <img src={wainui} alt="wainui" className="img" />
-                  </div>
-                  <div className="committee-tile-name">
-                    <div>
-                      <h3>{strings.WAINUI_WITIKA_PARK}</h3>
-                      <h4>{strings.SOCIAL_OFFICER}</h4>
-                    </div>
-                    <div>
-                      <OutlineButton
-                          onClick={() =>
-                              this.handleOnClick(
-                                  strings.WAINUI_WITIKA_PARK,
-                                  strings.SOCIAL_OFFICER,
-                                  strings.WAINUI_ORGANISES,
-                                  strings.WAINUI_THIRD_YEAR,
-                                  strings.WAINUI_JOINED_VUWWIT
-                              )
-                          }
-                          label={strings.MORE_ABOUT_WAINUI}
+                          label={strings.MORE_ABOUT_RACHEL}
                       />
                     </div>
                   </div>
                 </div>
 
+                <div className="committee-tile">
+                  <div>
+                    <img src={MALINA} alt="MALINA" className="img" />
+                  </div>
+                  <div className="committee-tile-name">
+                    <div>
+                      <h3>{strings.MALINA}</h3>
+                      <h4>{strings.MEDIA_LIAISON}</h4>
+                    </div>
+                    <div>
+                      <OutlineButton
+                          onClick={() =>
+                              this.handleOnClick(
+                                  strings.MALINA,
+                                  strings.MEDIA_LIAISON,
+                                  strings.MORE_ABOUT_Malina,
+                                  strings.MEDIA_LIAISON_About,
+                                  ""
+                              )
+                          }
+                          label={strings.MORE_ABOUT_Malina}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="committee-tile">
+                  <div>
+                    <img src={Sanjana} alt="Sanjana" className="img" />
+                  </div>
+                  <div className="committee-tile-name">
+                    <div>
+                      <h3>{strings.Sanjana}</h3>
+                      <h4>{strings.Campaigns_Liaison}</h4>
+                    </div>
+                    <div>
+                      <OutlineButton
+                          onClick={() =>
+                              this.handleOnClick(
+                                  strings.Sanjana,
+                                  strings.Campaigns_Liaison,
+                                  strings.MORE_ABOUT_Sanjana,
+                                  strings.Campaigns_Liaison_About,
+                                  ""
+                              )
+                          }
+                          label={strings.MORE_ABOUT_Sanjana}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className="committee-tile">
+                  <div>
+                    <img src={Samantha} alt="heenal" className="img" />
+                  </div>
+                  <div className="committee-tile-name">
+                    <div>
+                      <h3>{strings.Heenal}</h3>
+                      <h4>{strings.Events_Coordinator}</h4>
+                    </div>
+                    <div>
+                      <OutlineButton
+                          onClick={() =>
+                              this.handleOnClick(
+                                  strings.Heenal,
+                                  strings.Events_Coordinator,
+                                  strings.MORE_ABOUT_Heenal,
+                                  strings.Events_Coordinator_About,
+                                  ""
+                              )
+                          }
+                          label={strings.MORE_ABOUT_Heenal}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="committee-tile">
+                  <div>
+                    <img src={Samantha} alt="Samantha" className="img" />
+                  </div>
+                  <div className="committee-tile-name">
+                    <div>
+                      <h3>{strings.Samantha}</h3>
+                      <h4>{strings.Outreach_Officer}</h4>
+                    </div>
+                    <div>
+                      <OutlineButton
+                          onClick={() =>
+                              this.handleOnClick(
+                                  strings.Samantha,
+                                  strings.Outreach_Officer,
+                                  strings.MORE_ABOUT_Samantha,
+                                  strings.Outreach_Officer_About,
+                                  ""
+                              )
+                          }
+                          label={strings.MORE_ABOUT_Samantha}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="committee-tile">
+                  <div>
+                    <img src={Samantha} alt="Meg" className="img" />
+                  </div>
+                  <div className="committee-tile-name">
+                    <div>
+                      <h3>{strings.Meg}</h3>
+                      <h4>{strings.Workshops_Officer}</h4>
+                    </div>
+                    <div>
+                      <OutlineButton
+                          onClick={() =>
+                              this.handleOnClick(
+                                  strings.Meg,
+                                  strings.Workshops_Officer,
+                                  strings.MORE_ABOUT_Meg,
+                                  strings.Workshops_Officer_About,
+                                  ""
+                              )
+                          }
+                          label={strings.MORE_ABOUT_Meg}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="committee-tile">
+                  <div>
+                    <img src={Samantha} alt="Henry" className="img" />
+                  </div>
+                  <div className="committee-tile-name">
+                    <div>
+                      <h3>{strings.Henry}</h3>
+                      <h4>{strings.Networking_officer}</h4>
+                    </div>
+                    <div>
+                      <OutlineButton
+                          onClick={() =>
+                              this.handleOnClick(
+                                  strings.Henry,
+                                  strings.Networking_officer,
+                                  strings.MORE_ABOUT_Henry,
+                                  strings.Networking_officer_About,
+                                  ""
+                              )
+                          }
+                          label={strings.MORE_ABOUT_Henry}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className="committee-tile">
+                  <div>
+                    <img src={Stephanie} alt="Stephanie" className="img" />
+                  </div>
+                  <div className="committee-tile-name">
+                    <div>
+                      <h3>{strings.Stephanie}</h3>
+                      <h4>{strings.Social_Officer}</h4>
+                    </div>
+                    <div>
+                      <OutlineButton
+                          onClick={() =>
+                              this.handleOnClick(
+                                  strings.Stephanie,
+                                  strings.Social_Officer,
+                                  strings.MORE_ABOUT_Stephanie,
+                                  strings.Social_Officer_About,
+                                  ""
+                              )
+                          }
+                          label={strings.MORE_ABOUT_Stephanie}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="committee-tile">
+                  <div>
+                    <img src={jasna} alt="jasna" className="img" />
+                  </div>
+                  <div className="committee-tile-name">
+                    <div>
+                      <h3>{strings.Jasna}</h3>
+                      <h4>{strings.web_developer}</h4>
+                    </div>
+                    <div>
+                      <OutlineButton
+                          onClick={() =>
+                              this.handleOnClick(
+                                  strings.Jasna,
+                                  strings.web_developer,
+                                  strings.MORE_ABOUT_Jasna,
+                                  strings.web_developer_About,
+                                  ""
+                              )
+                          }
+                          label={strings.MORE_ABOUT_Jasna}
+                      />
+                    </div>
+                  </div>
+                </div>
                 {/* SUPPORT  */}
                 <div className="committee-tile">
                   <div>
