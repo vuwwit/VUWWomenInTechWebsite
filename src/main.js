@@ -25,6 +25,7 @@ import Gallery_witcon20 from "./scenes/gallery/witcon19";
 import Gallery_tdfg19 from "./scenes/gallery/tdfg19";
 import Gallery_hackathon19 from "./scenes/gallery/hackathon19";
 import Committee from "./scenes/about/committee";
+import Committee2020 from "./scenes/about/committee2020";
 import Media from "./scenes/media";
 //import Mentoring from "./scenes/mentoring";
 
@@ -55,6 +56,7 @@ const Main = () => (
       <Route path="/tdfg19" component={Gallery_tdfg19} />
       <Route path="/hackathon19" component={Gallery_hackathon19} />
       <Route path="/about-committee" component={Committee} />
+        <Route path="/about-committee2020" component={Committee2020} />
       <Route path="/media" component={Media} />
 
     </Switch>

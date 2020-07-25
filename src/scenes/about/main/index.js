@@ -58,6 +58,15 @@ class About extends Component {
               <p>{strings.VICTORIA_UNIVERSITY}</p>
             </div>
           </div>
+          <div className="About__committee">
+            <h3>{strings.Meet2020Committee}</h3>
+            <div className="About__committee-links">
+              <OutlineLink
+                  link={"/about-committee2020#committee2020"}
+                  label={strings.COMMITTEE_2020}
+              />
+            </div>
+          </div>
           <div className="About__main-whatwedo">
             <div className="About__main-whatwedo--content">
               <h2>{strings.WHAT_WE_DO}</h2>

@@ -5,7 +5,8 @@ export default {
   COMMITTEE_2019: "Meet the 2019 Committee",
   CONSTITUTION_LINK: "https://goo.gl/ZKrdD2",
   CONSTITUTION: "Read our Constitution",
-
+  Meet2020Committee: "About 2020 COMMITTEE:",
+  COMMITTEE_2020: "Meet the 2020 Committee",
   ABOUT_US: "About Us",
   WHO_WE_ARE: "Who We Are",
   VICTORIA_UNIVERSITY:
