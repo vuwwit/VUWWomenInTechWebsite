@@ -169,7 +169,7 @@ class Committee extends Component {
 
                 <div className="committee-tile">
                   <div>
-                    
+
                   </div>
                   <div className="committee-tile-name">
                     <div>
@@ -350,8 +350,7 @@ class Committee extends Component {
                     </div>
                   </div>
                 </div>
-                {/* SUPPORT  */}
-                <div className="committee-tile">
+                {/* <div className="committee-tile">
                   <div>
                     <img src={support} alt="support" className="img" />
                   </div>
@@ -375,7 +374,7 @@ class Committee extends Component {
                       />
                     </div>
                   </div>
-                </div>
+                </div>  */}
               </div>
               <div className="Committee__main-findoutmore">
                 <h3>{strings.FIND_OUT_MORE}</h3>
