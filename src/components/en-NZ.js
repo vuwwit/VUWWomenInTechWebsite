@@ -17,5 +17,6 @@ export default {
   GALLERY: "Gallery",
   VUWWIT_SHOP: "VUWWIT Shop",
   MEDIA: "Media & Documents",
-  MENTORING: "Mentoring"
+  MENTORING: "Mentoring",
+  CAREERS: "Careers"
 };

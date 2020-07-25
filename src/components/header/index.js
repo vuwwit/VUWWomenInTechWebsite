@@ -47,6 +47,8 @@ class Header extends Component {
               {strings.MEDIA}
             </div>
           </Link>
+
+
         </div>
         <div className="Header__right">
           <div className="hideOnMobile">
@@ -57,6 +59,12 @@ class Header extends Component {
           </div>
           <div className="hideOnMobile">
             <DarkerBlockLink label={strings.SPONSOR_US} link={"/sponsor"} />
+          </div>
+          <div className="hideOnMobile">
+            <LighterBlockLink
+                label={strings.CAREERS}
+                link="https://womenintechnz.prosple.com/"
+            />
           </div>
           <div className="showOnMobile">
             <Sidebar />
